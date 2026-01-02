@@ -43,7 +43,10 @@ export default function SignUpPage() {
     <div className="min-h-screen flex items-center justify-center px-4 py-8 bg-gray-50">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-center mb-2 text-gray-900">Sign Up</h1>
+          <div className="text-center mb-6">
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">Eight 100</h1>
+            <h2 className="text-xl font-semibold text-gray-700">Sign Up</h2>
+          </div>
           <p className="text-center text-gray-600 mb-6 text-sm">
             Create your account to get started
           </p>
