@@ -131,6 +131,12 @@ export default function DailyTasksTab({ userId }: DailyTasksTabProps) {
       }
     }
 
+    // Ensure existingLog is not null (should never happen at this point, but TypeScript needs it)
+    if (!existingLog) {
+      alert('Log not found. Please refresh the page and try again.');
+      return;
+    }
+
     const currentValue = existingLog.value_bool ?? false;
     const newValue = !currentValue;
 
@@ -199,6 +205,12 @@ export default function DailyTasksTab({ userId }: DailyTasksTabProps) {
           return;
         }
       }
+    }
+
+    // Ensure existingLog is not null (should never happen at this point, but TypeScript needs it)
+    if (!existingLog) {
+      alert('Log not found. Please refresh the page and try again.');
+      return;
     }
 
     // Toggle value_bool between true and false
